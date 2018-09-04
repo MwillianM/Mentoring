@@ -1,0 +1,17 @@
+Pyspark + Optimus
+Flask + SQLAlchemy
+Airflow + Hive
+Superset + Druid
+Kafka
+
+kafka -> HDFS -> Spark -> Hive -> Druid -> Flask
+
+
+Database normalization
+Star schema
+Data Partition
+Docker
+Kubernets
+Cloud
+ETL (ELT)
+Github gists
