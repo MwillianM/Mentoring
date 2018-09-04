@@ -3,8 +3,9 @@ Flask + SQLAlchemy
 Airflow + Hive
 Superset + Druid
 Kafka
+?Metabase
 
-kafka -> HDFS -> Spark -> Hive -> Druid -> Flask
+kafka -> HDFS -> Hive -> Spark -> Druid -> Flask
 
 
 Database normalization
