@@ -3,16 +3,33 @@ Flask + SQLAlchemy
 Airflow + Hive
 Superset + Druid
 Kafka
-?Metabase
-
-kafka -> HDFS -> Hive -> Spark -> Druid -> Flask
-
 
 Database normalization
 Star schema
 Data Partition
-Docker
-Kubernets
-Cloud
-ETL (ELT)
 Github gists
+
+Cloud Computing
+- Microsoft Azure
+- Azure SQL DB
+- Azure SQL Dw
+- CosmosDB
+- Azure Search
+- Hive
+- PowerBi
+
+On-Premises
+- Kubernetes
+- Docker
+- Sql Server
+- MongoDB
+- Druid
+- Pivot (Imply)
+
+IoT
+- Raspberry pi
+- Nifi
+- Kafka
+- ElasticSearch
+- Logstash
+- Kibana
