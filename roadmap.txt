@@ -1,7 +1,7 @@
 Pyspark + Optimus
-Flask + SQLAlchemy
-Airflow + Hive
-Superset + Druid
+Flask + SQLAlchemy + Jinja2
+Jinja2 + Hive + Druid
+Logstash + ElasticSearch + Kibana
 Kafka
 
 Database normalization
