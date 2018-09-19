@@ -1,3 +1,7 @@
+Python Course for Data Engineers Tasks - Level 100
+Python Course for Data Engineers with Azure Data Bricks - Level 300
+
+
 Pyspark + Optimus
 Flask + SQLAlchemy + Jinja2
 Jinja2 + Hive + Druid
