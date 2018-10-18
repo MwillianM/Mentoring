@@ -103,6 +103,7 @@ Definição
 - Escalável em poucos cliques
 - Pensado desde o início para ser rápido e moderno
 - Também funciona com tecnologias open source como React(mobile) e Node.js
+- Indexação automática de todos os dados
 
 Distribuição Global
 ---
@@ -138,7 +139,6 @@ Distribuição Global
   - Javascript
   - Gremlin
   - MongoDB
-  - Apache
   - Cassandra
   - Tabelas do próprio Azure
 - Funcionalidades:
@@ -163,11 +163,13 @@ Distribuição Global
   - Armazenamento de catálogos
   - Processamento de pedidos
 - Eventos
- - 
+ - Azure Functions
+ - Node.js
 
 Referências
 ---
 
 https://www.microsofttech.com.br/vamos-falar-de-cosmosdb/
+
 
 
