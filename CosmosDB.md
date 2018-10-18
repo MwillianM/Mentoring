@@ -169,7 +169,65 @@ Distribuição Global
 Referências
 ---
 
+https://www.microsofttech.com.br/open-source-trabalhando-com-programacao-reativa-e-azure-cosmosdb/?wt.mc_id=AID636721_QSG_BLOG_229275
 https://www.microsofttech.com.br/vamos-falar-de-cosmosdb/
 
+CosmosDB 3
+===
+
+Distribuição Global
+---
+
+- Azure é universal com mais de 50 regiões geográficas (em expansão)
+- Criar, Implantar e Gerenciar aplicativos distribuídos globalmente com facilidade
+
+Oferece:
+  - Multimodelo
+  - Distribuição local
+  - Suporte para aplicativos Críticos
+  - Distribuição global turnkey
+  - [dimensionamento elástico da produtividade e do armazenamento](https://docs.microsoft.com/pt-br/azure/cosmos-db/partition-data)
+    -
+    -
+    -
+    -
+  - Latência de milisegundo de um dígito de leitura e gravação a 99%
+  - [modelos de coerência bem-definidos](https://docs.microsoft.com/pt-br/azure/cosmos-db/consistency-levels)
+  ![Niveis de Consistência](five-consistency-levels.png)
+    - Forte: Transação Atômica (Garante a versão mais recente do dados)
+    - Consistência Amena: "Fornecem menos consistência de alta segurança, que é o modelo mais consistente disponível"
+      - **Desatualização Limitada:** Prefixo Consistente ("Lê latência por trás de gravações por meio de prefixos k ou intervalos t, no máximo")
+      - **Sessão:** Prefixo Consistente ("Leituras monotônicas, gravações monotônicas, read-your-writes (operações de leitura refletem gravações anteriores), write-follows-reads (gravações são propagadas após as leituras)")
+      - **Prefixo Consistente:** As atualizações retornadas são algum prefixo de todas as atualizações, sem intervalos
+      - Eventual: Leitura fora de ordem
+      - **exclusivos**
+      - Outros bancos: Não oferece opção de consistência ou oferece Forte e Eventual.
+    - Escolher o nível de consistência em tempo de execução
+    - 
+  - [Verificador de Transição Atômica](http://dl.acm.org/citation.cfm?id=1806634)
+    -
+    -
+    -
+    -
+  - Garantia de alta disponibilidade
+  - [SLAs abrangentes líderes do setor](https://azure.microsoft.com/support/legal/sla/cosmos-db/)
+    -
+    -
+    -
+    -
+  - [indexa automaticamente todos os seus dados](http://www.vldb.org/pvldb/vol8/p1668-shukla.pdf)
+    -
+    -
+    -
+    -
+  - Não necessita lidar com gerenciamento de esquemas e índices
+-Distribuição global multimaster
+![1 Conteiner CosmosDB](./global-apps.png)
 
 
+???
+---
+
+Distribuição Global Turnkey = "Como aprendemos durante a criação do Azure Cosmos DB, a adição da distribuição global não pode ser uma consideração posterior. Ela não pode ser “forçada” em um sistema de banco de dados de “site único”. As funcionalidades oferecidas por um banco de dados distribuído globalmente estendem-se além das oferecidas por uma Geo-DR (recuperação de desastre geográfica) tradicional dos bancos de dados de "site único". Bancos de dados de site único que oferecem a capacidade de Geo-DR são um subconjunto restrito de bancos de dados distribuídos globalmente.
+
+Com a distribuição global turnkey do Azure Cosmos DB, os desenvolvedores não precisam criar seu próprio scaffolding de replicação empregando o padrão Lambda no log do banco de dados ou realizando "gravações duplas" em várias regiões. Não recomendamos essas abordagens, pois é impossível garantir sua exatidão e fornecer SLAs robustos."
